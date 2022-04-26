@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Eid Gift</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img
+      id="spooky"
+      src="Images/spooky-picture.gif"
+      alt=""
+      style="visibility: hidden; width: 100%; height: 100vh; position: absolute"
+    />
+    <audio id="sound1" src="Audio/scream.mp3" preload="auto"></audio>
+    <button onclick="showImage()">Click Here to see gift</button>
+
+    <script type="text/javascript">
+      function showImage() {
+        document.getElementById("spooky").style.visibility = "visible";
+        document.getElementById('sound1').play();
+      }
+    </script>
+  </body>
+</html>
